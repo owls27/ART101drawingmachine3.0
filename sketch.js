@@ -12,7 +12,11 @@ function draw() {
     line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
+}
 
-
-
+function keyTyped(){
+  if (key === 's'){
+    saveCanvas('fileName', 'png');
+  }
+  return false;
 }
