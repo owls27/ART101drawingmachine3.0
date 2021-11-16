@@ -1,4 +1,5 @@
 let array = [];
+let i;
 
 function setup() {
   createCanvas(400, 400);
@@ -25,9 +26,7 @@ function keyTyped() {
     saveCanvas('fileName', 'png');
   } else if (key === 'd') {
     //display image
-    for (let i = 0; i < array.length - 1; i++) {
-      console.log(i);
-    }
+    for (let i = 0; i < array.length - 1; i++) {}
     // line(array[i][0], array[i][1], array[i + 1][0], array[i + 1][1]);
     curveVertex(array[i][0], array[i][1]);
   }
